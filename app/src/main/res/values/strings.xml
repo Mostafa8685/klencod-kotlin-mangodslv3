@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mango DSL</string>
+    <string name="engine_title">محرك ألعاب Mango DSL 2D</string>
+    <string name="play">تشغيل</string>
+    <string name="pause">إيقاف</string>
+    <string name="stop">إنهاء</string>
+    <string name="scene_editor">محرر المشهد</string>
+    <string name="code_editor">محرر الأكواد</string>
+    <string name="asset_manager">مدير الأصول</string>
+    <string name="dictionary">قاموس لغة الضاد</string>
+</resources>

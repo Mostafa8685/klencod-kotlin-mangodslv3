@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF7043</color>
+    <color name="primary_dark">#D84315</color>
+    <color name="accent">#FFA726</color>
+    <color name="background_dark">#12131A</color>
+    <color name="surface_dark">#1E202B</color>
+    <color name="card_dark">#272A38</color>
+    <color name="text_primary">#F0F4F8</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="editor_bg">#181A20</color>
+    <color name="arabic_accent">#00E676</color>
+    <color name="python_accent">#29B6F6</color>
+</resources>

@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+// تنظيف تلقائي لأي ملفات متبقية من القالب الافتراضي في Klencod IDE لمنع أخطاء الترجمة مثل NotifyJobService.kt
+file("src/main/java/com/apk3rde").deleteDir()
+
+android {
+    namespace "com.mangodsl.engine"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.mangodsl.engine"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0-Engine"
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            applicationIdSuffix ""
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+}
